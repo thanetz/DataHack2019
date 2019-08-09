@@ -11,6 +11,14 @@ Ever wondered what would happen if you just plug in that seemingly innocent USB 
 
 # Evaluation
 As this is an unsupervised challenge, the evaluation process will be a mix of classical leaderboard evaluation and in-person review of the models used.
+The final score will be consist of the follows (Sorted descendingly by importance):
+* **Leaderboard Evaluation**
+Your model results will be matched against a prelabeled dataset - this grading will occur as soon as you'll submit your results for evaluation.
+* 
+* **Explainability**
+Why is this observation an anomaly? Does your model produce a confidence level for each result? Can we calculate the level of importance of this anomaly?
+* 
+
 
 # Submissions
 Please send us the anomaly scores you received for each device along with your code in a zip file. You can submit the results as many times as you wish.
