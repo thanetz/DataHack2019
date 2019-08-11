@@ -24,6 +24,9 @@ aggregated by hours (each row aggregates data from several sessions).
 
 * Other than "network_id", "device_id" and "type" all fields are optional and can be null
 
+### Example
+For example line 3 tells us that in network 1 device with device id of 39399 is of type Mobile Phone manufactured by Apple
+
 
 ## Sessions Dataset in-depth
 
