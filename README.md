@@ -12,6 +12,18 @@ We will used devices information and network traffic from several different netw
 aggregated by hours (each row aggregates data from several sessions).
 
 ## Device Dataset in-depth
+### Fields
+| Field | Description |
+| ------------- |-------------|
+| network_id | A numeric network identifier |
+| device_id | A numeric device identifier |
+| type | The device type, one of ("MOBILE_PHONE", "LAPTOP", "TABLET", "DESKTOP", "WATCH", "VOIP", "PRINTER", "IP_CAMERA") |
+| model | The device model |
+| manufacturer | The device manufacturer |
+| operating_system_version | The device Operating System Version |
+
+* Other than "network_id", "device_id" and "type" all fields are optional and can be null
+
 
 ## Sessions Dataset in-depth
 
