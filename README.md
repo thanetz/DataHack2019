@@ -38,6 +38,24 @@ For example line 3 tells us that in network 1 device with device id of 39399 is 
 
 ## Sessions Dataset in-depth
 
+### Fields
+| Field | Description |
+| ------------- |-------------|
+| network_id | A numeric network identifier |
+| device_id | A numeric device identifier |
+| timestamp | The hour for which the sessions data are aggregated |
+| host | The host the device was connected to |
+| port_dst | The destination port used in the session |
+| transport_protocol | The connection protocol - could be TCP or UDP |
+
+* Other than "network_id", "device_id" and "type" all fields are optional and can be null
+
+### Example
+For example, line 2 tells us that at 00:00 hours (=midnight) device 139276 was connected to
+HYBRID-AD01.armiscorp.com, through port 137, using the UDP protocol. During this hour,
+device 139276 sent 438 bytes to HYBRID-AD01.armiscorp.com, and received 455 bytes from it.
+A total of 8 packets was transferred.
+
 ## Data Sets Visualizations
 
 # Example
