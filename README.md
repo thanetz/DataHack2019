@@ -34,7 +34,7 @@ aggregated by hours (each row aggregates data from several sessions).
 
 ### Example
 For example line 3 tells us that in network 1 device with device id of 39399 is of type Mobile Phone manufactured by Apple
-
+TODO: add image
 
 ## Sessions Dataset in-depth
 
@@ -48,7 +48,9 @@ For example line 3 tells us that in network 1 device with device id of 39399 is 
 | port_dst | The destination port used in the session |
 | transport_protocol | The connection protocol - could be TCP or UDP |
 
-* Other than "network_id", "device_id" and "type" all fields are optional and can be null
+TODO: continue to add descriptions
+
+* Other than "network_id" and "device_id" all fields are optional and can be null
 
 ### Example
 For example, line 2 tells us that at 00:00 hours (=midnight) device 139276 was connected to
@@ -56,11 +58,18 @@ HYBRID-AD01.armiscorp.com, through port 137, using the UDP protocol. During this
 device 139276 sent 438 bytes to HYBRID-AD01.armiscorp.com, and received 455 bytes from it.
 A total of 8 packets was transferred.
 
+TODO: add image
+
+
 ## Data Sets Visualizations
+
+TODO: add visualizations
 
 # Example
 <a name="Example"></a>
 Please look for the example.ipynb notebook in the examples directory. There should be a straightforward approach on anomaly detection using the datasets above.
+
+TODO: add example
 
 # Evaluation
 <a name="Evaluation"></a>
