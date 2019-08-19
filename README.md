@@ -33,8 +33,9 @@ aggregated by hours (each row aggregates data from several sessions).
 * Other than "network_id", "device_id" and "type" all fields are optional and can be null
 
 ### Example
-For example line 3 tells us that in network 1 device with device id of 39399 is of type Mobile Phone manufactured by Apple
-TODO: add image
+In the snippet below there are 3 apple watch devices and one ipad all from network 0.
+
+![Devices](/resources/devices.png?raw=true "Devices")
 
 ## Sessions Dataset in-depth
 
@@ -83,12 +84,11 @@ TODO: add image
 * Other than "network_id" and "device_id" all fields are optional and can be null
 
 ### Example
-For example, line 2 tells us that at 00:00 hours (=midnight) device 139276 was connected to
-HYBRID-AD01.armiscorp.com, through port 137, using the UDP protocol. During this hour,
-device 139276 sent 438 bytes to HYBRID-AD01.armiscorp.com, and received 455 bytes from it.
-A total of 8 packets was transferred.
+In the snippet below there are some row aggregation from network 0.
+For example, the first line tells us that device id 35 connected 39 times using TCP to host "ecbb92..." with port 49152 during the hour started at 156507480 (06.08.2019 07:00 UTC). 
+During those sessions a total of 260 packets transferred.
 
-TODO: add image
+![Sessions](/resources/sessions.png?raw=true "Sessions")
 
 
 ## Data Sets Visualizations
