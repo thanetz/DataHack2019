@@ -25,7 +25,7 @@ aggregated by hours (each row aggregates data from several sessions).
 | ------------- |-------------|
 | network_id | A numeric network identifier |
 | device_id | A numeric device identifier |
-| type | The device type, one of ("MOBILE_PHONE", "LAPTOP", "TABLET", "DESKTOP", "WATCH", "VOIP", "PRINTER", "IP_CAMERA") |
+| type | The device type, one of ("MOBILE_PHONE", "TABLET", "PC", "WATCH", "VOIP", "PRINTER", "IP_CAMERA") |
 | model | The device model |
 | manufacturer | The device manufacturer |
 | operating_system_version | The device Operating System Version |
@@ -44,11 +44,41 @@ TODO: add image
 | network_id | A numeric network identifier |
 | device_id | A numeric device identifier |
 | timestamp | The hour for which the sessions data are aggregated |
-| host | The host the device was connected to |
+| host | The domain the device was connected to, if domain is unknown the host ip will be displayed (this field is hashed) |
+| host_ip | The ip of the host the device was connected to (this field is hashed) |
 | port_dst | The destination port used in the session |
 | transport_protocol | The connection protocol - could be TCP or UDP |
+| service_device_id | The device id of the destination host that our device was connected to |
+| packets_count | Total packets transferred during the aggregated sessions |
+| outbound_bytes_count | Total bytes sent during the aggregated sessions |
+| inbound_bytes_count | Total bytes received during the aggregated sessions |
+| packet_loss | Total packets that were lost during the session |
+| retransmit_count | Total packets that were retransmitted during the aggregated sessions |
+| latency | Network latency during the aggregated sessions |
+| session_count | Count of sessions that this aggregated row holds |
+| outbound_packets_count | Total packets sent during the aggregated sessions |
+| inbound_packets_count | Total packets received during the aggregated sessions |
+| outbound_bytes_max | Max bytes sent in one session of the aggregated sessions |
+| outbound_bytes_min | Min bytes sent in one session of the aggregated sessions |
+| outbound_bytes_mean | Mean of bytes sent during the aggregated sessions |
+| outbound_bytes_median | Median of bytes sent during the aggregated sessions |
+| outbound_bytes_stddev | Standard deviation of bytes sent during the aggregated sessions |
+| inbound_bytes_max | Max bytes received in one session of the aggregated sessions |
+| inbound_bytes_min | Min bytes received in one session of the aggregated sessions |
+| inbound_bytes_mean | Mean of bytes received during the aggregated sessions |
+| inbound_bytes_median | Median of bytes received during the aggregated sessions |
+| inbound_bytes_stddev | Standard deviation of bytes received during the aggregated sessions |
+| outbound_packet_size_max | Max packet size sent in one session of the aggregated sessions |
+| outbound_packet_size_min | Min packet size sent in one session of the aggregated sessions |
+| outbound_packet_size_mean | Mean of packet size sent during the aggregated sessions |
+| outbound_packet_size_median | Median of packet size sent during the aggregated sessions |
+| outbound_packet_size_stddev | Standard deviation of packet size sent during the aggregated sessions |
+| inbound_packet_size_max | Max packet size received in one session of the aggregated sessions |
+| inbound_packet_size_min | Min packet size received in one session of the aggregated sessions |
+| inbound_packet_size_mean | Mean of packet size received during the aggregated sessions |
+| inbound_packet_size_median | Median of packet size received during the aggregated sessions |
+| inbound_packet_size_stddev | Standard deviation of packet size received during the aggregated sessions |
 
-TODO: continue to add descriptions
 
 * Other than "network_id" and "device_id" all fields are optional and can be null
 
