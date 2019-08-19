@@ -8,7 +8,7 @@ Ever wondered what would happen if you just plug in that seemingly innocent USB 
 
 # Table of Contents  
 [Dataset](#Dataset)  
-[Solution Example](#Example)  
+[Solution Example](#SolutionExample)  
 [Evaluation](#Evaluation)  
 [Submissions](#Submissions)
 
@@ -96,7 +96,7 @@ During those sessions a total of 260 packets transferred.
 TODO: add visualizations
 
 # Solution Example
-<a name="Example"></a>
+<a name="SolutionExample"></a>
 Please look for the example.ipynb notebook in the examples directory. There should be a straightforward approach on anomaly detection using the datasets above.
 
 TODO: add example
