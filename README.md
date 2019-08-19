@@ -1,6 +1,6 @@
 # DATAHACK 2019
 
-![Armis](/Armis-LinkedIn-Banner-IMG.png?raw=true "Armis")
+![Armis](/resources/Armis-LinkedIn-Banner-IMG.png?raw=true "Armis")
 
 # Devices Gone Rogue Challenge
 Ever wondered what would happen if you just plug in that seemingly innocent USB you found laying around? You’re about to find out! In this devices-gone-rogue challenge - should you choose to accept it - you will gain access to traffic data of ~ 1M devices, and will be tasked with finding the devices that, well, misbehave. This challenge, provided by Armis, is fully unsupervised - so put your anomaly belt on and get to it!
@@ -8,7 +8,7 @@ Ever wondered what would happen if you just plug in that seemingly innocent USB 
 
 # Table of Contents  
 [Dataset](#Dataset)  
-[Example](#Example)  
+[Solution Example](#Example)  
 [Evaluation](#Evaluation)  
 [Submissions](#Submissions)
 
@@ -95,7 +95,7 @@ During those sessions a total of 260 packets transferred.
 
 TODO: add visualizations
 
-# Example
+# Solution Example
 <a name="Example"></a>
 Please look for the example.ipynb notebook in the examples directory. There should be a straightforward approach on anomaly detection using the datasets above.
 
