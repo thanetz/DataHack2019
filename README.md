@@ -91,9 +91,18 @@ During those sessions a total of 260 packets transferred.
 ![Sessions](/resources/sessions.png?raw=true "Sessions")
 
 
-## Data Sets Visualizations
+## Data Sets 2 Network Diagram
 
-TODO: add visualizations
+Let's review some connections from network number 1. The following tables display 5 devices data and their relevant sessions:
+
+![Devices](/resources/viz_devices.png?raw=true "Devices")
+
+![Sessions](/resources/viz_sessions.png?raw=true "Sessions")
+
+From those snippets we can understand that there is one PC connected to 3 IP Cameras. 
+One of the IP Cameras is connected to another IP Camera. Here is a quick network diagram explaining the connections visually:
+
+![Network](/resources/DataHackViz.png?raw=true "Data Hack")
 
 # Solution Example
 <a name="SolutionExample"></a>
