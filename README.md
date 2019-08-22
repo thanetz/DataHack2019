@@ -83,7 +83,7 @@ In the snippet below there are 3 apple watch devices and one ipad all from netwo
 
 
 * Other than "network_id" and "device_id" all fields are optional and can be null
-* Sessions between two devices in the same network will only be displayed once with the device_id of the device that initiated the session and service_device_id of the other device 
+* Sessions between two devices in the same network will only be displayed once - with the device_id indicates the id of device that initiated the session and service_device_id indicates the id of the target device 
 
 ### Example
 In the snippet below there are some row aggregation from network 0.
