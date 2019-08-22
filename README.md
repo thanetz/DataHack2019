@@ -3,7 +3,8 @@
 ![Armis](/resources/Armis-LinkedIn-Banner-IMG.png?raw=true "Armis")
 
 # Devices Gone Rogue Challenge
-Ever wondered what would happen if you just plug in that seemingly innocent USB you found laying around? You’re about to find out! In this devices-gone-rogue challenge - should you choose to accept it - you will gain access to traffic data of ~ 1M devices, and will be tasked with finding the devices that, well, misbehave. This challenge, provided by Armis, is fully unsupervised - so put your anomaly belt on and get to it!
+Ever wondered what would happen if you just plug in that seemingly innocent USB you found laying around? You’re about to find out! In this devices-gone-rogue challenge - should you choose to accept it - you will gain access to traffic data of ~ 1M devices, and will be tasked with finding the devices that, well, misbehave. 
+This challenge, is fully unsupervised - so put your anomaly belt on and get to it!
 
 
 # Table of Contents  
@@ -14,17 +15,17 @@ Ever wondered what would happen if you just plug in that seemingly innocent USB 
 
 # Dataset
 <a name="Dataset"></a>
-We will used devices information and network traffic from several different networks:
-* **Devices.csv** - Data of devices and their appropriate type, manufacturer and model.
-* **Sessions.csv** - Details of the connections between a device and external or internal hosts,
+We will use devices information and network traffic from several different networks:
+* **Devices.csv** - Data of devices and their type, manufacturer and model.
+* **Sessions.csv** - Details of the connections between a device and hosts,
 aggregated by hours (each row aggregates data from several sessions).
 
 ## Device Dataset in-depth
 ### Fields
 | Field | Description |
 | ------------- |-------------|
-| network_id | A numeric network identifier |
-| device_id | A numeric device identifier |
+| network_id | A numeric network identifier, this file contains devices information from 4 independent networks (0, 1, 2, 3)|
+| device_id | A numeric device identifier, unique inside the network |
 | type | The device type, one of ("MOBILE_PHONE", "TABLET", "PC", "WATCH", "VOIP", "PRINTER", "IP_CAMERA") |
 | model | The device model |
 | manufacturer | The device manufacturer |
@@ -42,7 +43,7 @@ In the snippet below there are 3 apple watch devices and one ipad all from netwo
 ### Fields
 | Field | Description |
 | ------------- |-------------|
-| network_id | A numeric network identifier |
+| network_id | A numeric network identifier, this file contains sessions information from 4 independent networks (0, 1, 2, 3) |
 | device_id | A numeric device identifier |
 | timestamp | The hour for which the sessions data are aggregated |
 | host | The domain the device was connected to, if domain is unknown the host ip will be displayed (this field is hashed) |
@@ -82,6 +83,7 @@ In the snippet below there are 3 apple watch devices and one ipad all from netwo
 
 
 * Other than "network_id" and "device_id" all fields are optional and can be null
+* Sessions between two devices in the same network will only be displayed once with the device_id of the device that initiated the session and service_device_id of the other device 
 
 ### Example
 In the snippet below there are some row aggregation from network 0.
